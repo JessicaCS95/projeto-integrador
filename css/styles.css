@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d4ccb4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    align-items: center;
+    background-color: #a47c4c;
+    width: 100%;
+
+}
+
+
+
+.cabecalho a {
+    text-decoration: none;
+    color: #2c1c04;
+
+
+}
+
+.logoheader {
+    width: 80%;
+}
+
+.imglogo {
+    padding: 1%;
+}
+
+.perfil {
+
+    width: 100%;
+}
+
+.iconperfil {
+    width: 4rem;
+
+}
+
+.lupa {
+    width: 1.5625rem;
+    height: auto;
+}
+
+.pesquisa {
+    background-color: #d4ccb4;
+    border: solid #d4ccb4 0.2rem;
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 25%;
+}
+
+.txtbusca {
+    background-color: transparent;
+    border: none;
+    flex-grow: 3;
+    min-width: 9.375rem;
+    width: 100%;
+}
+
+
+
+.fundomadeira {
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-image: url(/img/fundo_madeira.png);
+    background-repeat: no-repeat;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoh1 {
+    color: #f3ecd4;
+    font-family: "Montserrat";
+    font-weight: bold;
+    width: 100%;
+    text-align: right;
+}
+
+.textoh1 h1 {
+    margin: 0;
+    padding: 2%;
+}
+
+main {
+    font-family: "Open Sans";
+    color: #a37c4c;
+    font-size: 1.25rem;
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dados {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.cpfedata {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.cpf,
+.datanasc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.cpf input,
+.datanasc input {
+    width: 100%;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.inline {
+    width: 100%;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.fimform {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.fimform input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #a47c4c;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fieldset {
+    margin-top: 2%;
+    width: 100%;
+}
+
+fieldset {
+    display: flex;
+    border-top: 0.125rem solid #636363;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    color: #636363;
+    margin: auto;
+}
+
+.fim {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    font-size: 1rem;
+}
+
+.fundo {
+    display: flex;
+    background-color: #f3ecd4;
+    color: #2c1c04;
+    font-family: "Montserrat";
+    font-weight: bold;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.logofooter {
+    width: 25%;
+    margin-bottom: 1rem;
+}
+
+.contatos,
+.endereco,
+.formapag {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+.imgpagamento {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.contatos,
+.formapag,
+.endereco {
+    margin-top: 1.875rem;
+}
+
+.icone {
+    width: 1.5625rem;
+}
+
+.cadastrar {
+    background-color: #a47c4c;
+    border: 0.125rem solid #2c1c04;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #2c1c04;
+}
+
+.conta {
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: #a37c4c;
+}
+
+.icon {
+    position: fixed;
+    bottom: 3.75rem;
+    right: 1.875rem;
+    font-size: 1.875rem;
+    background-color: #01e675;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.1875rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 0.125rem 0.125rem 0.125rem #c0bdbd;
+}
+
+.icon .fab {
+    padding-top: 0.5625rem;
+}
+
+.icon:hover {
+    background-color: #fff;
+    color: #029e3b;
+    font-weight: 900;
+    box-shadow: 0.125rem 0.125rem 1.25rem #5fe690;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cabecalho a {
+        margin: 0.25rem 0;
+    }
+
+    .logoheader {
+        width: 30%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .pesquisa {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .cpfedata {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .cpf,
+    .datanasc {
+        width: 100%;
+    }
+
+
+    .fundo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contatos,
+    .endereco,
+    .formapag {
+        width: 60%;
+        height: 30%;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .logofooter {
+        width: 50%;
+        height: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .imgpagamento {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .fimform input {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .cabecalho a {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .logoheader {
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .txtbusca {
+        font-size: 0.8rem;
+    }
+
+    .textoh1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .contatos {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    main {
+        font-size: 1rem;
+    }
+}

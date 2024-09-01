@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="cabecalho">
+            <div class="logoheader"><img class="imglogo" src="img/logo_header.png" width="200rem" height="100rem"></div>
+            <a href="#">QUEM SOMOS</a>
+            <a href="#">CATÁLOGO</a>
+            <a href="#">ORÇAMENTO</a>
+            <a href="#">PORTFÓLIO</a>
+            <a href="#">BLOG</a>
+
+            <div class="pesquisa">
+                <img class="lupa" src="img/lupa.png" alt="lupa">
+                <input type="text" class="txtbusca" placeholder="Buscar..." />
+            </div>
+            <div class="perfil"><a href="#"><img src="img/perfil.png" class="iconperfil"></a></div>
+        </nav>
+
+    </header>
+
+    <div class="buttonzap">
+        <a href="https://api.whatsapp.com/send?phone=SEUNUMERO" class="icon" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <div class="fundomadeira">
+        <div class="textoh1">
+            <h1>Cadastro</h1>
+        </div>
+
+    </div>
+
+    <main>
+        <form>
+            <label class="label" for=" nomeRazao">Nome e Sobrenome ou Razão Social:</label>
+            <input type="text" name="nomeRazao" class="dados">
+
+            <div class="cpfedata">
+
+                <div class="cpf">
+                    <label for="cpfCnpj">CPF ou CNPJ:</label>
+                    <input type="number" name="CPF" class="dados">
+                </div>
+
+                <div class="datanasc">
+                    <label for="dataNasc">Data de Nascimento:</label>
+                    <input type="date" name="data" class="dados">
+                </div>
+
+            </div>
+
+            <label class="label" for="email">E-mail:</label>
+            <input type="text" name="email" class="dados">
+            <label class="label" for=" celular">Celular:</label>
+            <input type="number" name="tel" class="dados">
+            <label class="label" for=" senha">Crie uma senha:</label>
+            <input type="password" name="senha" class="dados">
+            <label class="label" for=" senha">Repita a senha:</label>
+            <input type="password" name="verificaSenha" class="dados">
+
+
+
+        </form>
+
+        <div class="inline">
+
+            <div class="novidemail">
+                <input type="checkbox" name="novemail">
+                <label for="novemail">Aceito receber novidades por E-mail</label>
+            </div>
+
+            <div class="novidsms">
+                <input type="checkbox" name="novsms">
+                <label for="novsms">Aceito receber novidades por SMS</label>
+            </div>
+        </div>
+
+        <div class="fimform">
+            <input type="submit" value="CADASTRAR" class="cadastrar">
+        </div>
+
+        <div class="fieldset">
+            <fieldset>
+                <legend>ou</legend>
+            </fieldset>
+        </div>
+
+        <div class="fim">
+            <p>Já tem cadastro? <a href="#" class="conta">Acesse sua Conta</a></p>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="fundo">
+            <img src="img/logo_footer.png"
+                alt="Logo na horizontal" class="logofooter">
+
+
+            <div class="contatos">
+                CONTATOS
+                <div>
+                    <img src="img/email.png"
+                        alt="Ícone e-mail" class="icone">
+                    ribeiroplanejados@gmail.com.br
+                    <img src="img/tel.png"
+                        alt="Ícone telefone" class="icone">
+                    (11) 2222 - 2222
+                </div>
+            </div>
+
+            <div class="endereco">
+                ENDEREÇO
+                <div>
+                    <img src="img/local.png" alt="Ícone de localização" class="icone">
+                    <address>
+                        Rua Dr. Antônio Bento 393,
+                        São Paulo, SP, 04750-000
+                    </address>
+                </div>
+            </div>
+
+            <div class="formapag">
+                FORMAS DE PAGAMENTO
+                <img src="img/formapag.png"
+                    alt="Formas de pagamento: Mastercard, Visa, PIX, boleto" class="imgpagamento">
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
