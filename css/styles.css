@@ -11,6 +11,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: #d4ccb4;
     font-family: 'Open Sans', sans-serif;
 }
@@ -24,11 +26,6 @@ header {
     padding: 0.4rem 0;
 }
 
-.logo{
-    display: flex;
-    margin: auto;
-}
-
 
 .cabecalho {
     display: flex;
@@ -36,14 +33,15 @@ header {
     font-family: "Montserrat", 'Courier New', Courier, monospace;
     font-weight: bold;
     align-items: center;
-    width: 100%;
+    width: 100%;    
 }
 
 .menu1,
 .menu2,
 .menu3, .menu4, .menu5{
+    flex: 1;
     padding: 1%;
-    border: #01e675 solid 2px;
+    text-align: center;
     
 }
 
@@ -51,8 +49,7 @@ header {
     text-decoration: none;
     color: #2c1c04;
     font-size: 1rem;
-    
-    
+    white-space: nowrap;
 }
 
 .pesquisa{
@@ -64,7 +61,6 @@ header {
     justify-content: space-between;
     margin: auto;
     width: 20%;
-    
 } 
    
 
@@ -72,7 +68,6 @@ header {
 .txtbusca {
     background-color: transparent;
     border: none;
-    flex-grow: 3;
     min-width: 9.375rem;
     width: 100%;
     
@@ -225,6 +220,12 @@ fieldset {
     font-size: 1rem;
 }
 
+.conta {
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: #a37c4c;
+}
+
 .fundo {
     display: flex;
     background-color: #f3ecd4;
@@ -235,50 +236,61 @@ fieldset {
     flex-wrap: nowrap;
     align-items: center;
     padding: 0.5rem;
+    justify-content: space-between;
 }
 
 .logofooter {
-    width: 25%;
-    margin-bottom: 1rem;
+    width: 22%;
+ 
 }
 
 .contatos,
-.endereco,
-.formapag {
-    width: 100%;
-    margin-bottom: 1rem;
-    text-align: center;
-
+.endereco, .pag{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+      
 }
 
-.imgpagamento {
+.email, .tel{
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    justify-content: left;
+    
+}
+
+.mailto{
+    text-decoration: none;
+    color: inherit;
+}
+
+.mailto:hover{
+    text-decoration: underline;
+}
+
+.pag{
+    margin-top: 1.8rem;
+    margin-bottom: 0;
+    white-space: nowrap;
 }
 
 .contatos,
-.formapag,
-.endereco {
-    margin-top: 1.875rem;
+.endereco{
+    margin-bottom: 0.5rem;
+    
+}
+
+address{
+    white-space: nowrap;
+    font-size: 0.9rem;
 }
 
 .icone {
-    width: 1.5625rem;
+    width: 1.2rem; 
 }
 
-.cadastrar {
-    background-color: #a47c4c;
-    border: 0.125rem solid #2c1c04;
-    font-family: "Open Sans";
-    font-weight: bold;
-    color: #2c1c04;
-}
-
-.conta {
-    text-decoration: none;
-    text-decoration-line: underline;
-    color: #a37c4c;
-}
 
 .icon {
     position: fixed;
@@ -317,12 +329,12 @@ fieldset {
 
     .cabecalho a {
         margin: 0.25rem 0;
+        font-size: 1rem; 
     }
 
     .logoheader {
-        width: 30%;
-        margin: auto;
-        margin-bottom: 1rem;
+        width: 50%; 
+        
     }
 
     .pesquisa {
@@ -340,25 +352,18 @@ fieldset {
         width: 100%;
     }
 
-
-    .fundo {
-        flex-direction: column;
-        align-items: center;
+    .fimform input {
+        width: 100%;
     }
 
-    .contatos,
-    .endereco,
-    .formapag {
-        width: 60%;
-        height: 30%;
-        margin-bottom: 1rem;
-        text-align: center;
+    
+    .fundo {
+        flex-direction: column;
     }
 
     .logofooter {
-        width: 50%;
-        height: 50%;
-        margin-bottom: 1rem;
+        width: 35%;
+        
     }
 
     .imgpagamento {
@@ -366,9 +371,24 @@ fieldset {
         margin-bottom: 1rem;
     }
 
-    .fimform input {
-        width: 100%;
+    .contatos,
+    .endereco, .pag {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.4rem;
+        
+        
     }
+
+    .email, .tel {
+        justify-content: left;
+    }
+
+    .icone {
+        margin: 0;
+    }
+
+    
 }
 
 
@@ -378,14 +398,11 @@ fieldset {
         width: 100%;
     }
 
-    .logoheader {
-        width: 30%;
-        align-items: center;
-        justify-content: center;
-    }
+    
 
     .txtbusca {
         font-size: 0.8rem;
+        width: 80%;
     }
 
     .textoh1 h1 {
@@ -395,10 +412,37 @@ fieldset {
     .contatos {
         display: flex;
         flex-direction: row;
-
     }
 
     main {
         font-size: 1rem;
     }
-} 
+
+   
+    .fundo {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logofooter {
+        width: 80%;
+        min-width: 40%;
+        height: auto;
+        
+    }
+
+    .contatos,
+    .endereco,
+    .pag {
+        flex-direction: column;
+        text-align: left;
+        font-size: 0.8rem; 
+        
+    }
+
+
+    .icone {
+        width: 1rem;
+    }
+}
