@@ -4,7 +4,10 @@
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    
 }
 
 body {
@@ -13,52 +16,46 @@ body {
 }
 
 header {
+    top: 0;
+    left: 0;
     width: 100%;
+    background-color: #a47c4c;
+    text-align: center;
+    padding: 0.4rem 0;
 }
+
+.logo{
+    display: flex;
+    margin: auto;
+}
+
 
 .cabecalho {
     display: flex;
     flex-direction: row;
+    font-family: "Montserrat", 'Courier New', Courier, monospace;
     font-weight: bold;
     align-items: center;
-    background-color: #a47c4c;
     width: 100%;
-
 }
 
-
+.menu1,
+.menu2,
+.menu3, .menu4, .menu5{
+    padding: 1%;
+    border: #01e675 solid 2px;
+    
+}
 
 .cabecalho a {
     text-decoration: none;
     color: #2c1c04;
-
-
+    font-size: 1rem;
+    
+    
 }
 
-.logoheader {
-    width: 80%;
-}
-
-.imglogo {
-    padding: 1%;
-}
-
-.perfil {
-
-    width: 100%;
-}
-
-.iconperfil {
-    width: 4rem;
-
-}
-
-.lupa {
-    width: 1.5625rem;
-    height: auto;
-}
-
-.pesquisa {
+.pesquisa{
     background-color: #d4ccb4;
     border: solid #d4ccb4 0.2rem;
     border-radius: 0.625rem;
@@ -66,8 +63,11 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    width: 25%;
-}
+    width: 20%;
+    
+} 
+   
+
 
 .txtbusca {
     background-color: transparent;
@@ -75,9 +75,21 @@ header {
     flex-grow: 3;
     min-width: 9.375rem;
     width: 100%;
+    
+}
+
+.lupa{
+    width: 1.5rem;
+}
+
+.perfil{
+    margin: auto;
 }
 
 
+.iconperfil{
+    width: 4rem;
+}
 
 .fundomadeira {
     width: 100%;
@@ -110,7 +122,7 @@ main {
     padding: 1rem;
     max-width: 600px;
     margin: auto;
-}
+} 
 
 form {
     display: flex;
@@ -297,7 +309,7 @@ fieldset {
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1030px) {
     .cabecalho {
         flex-direction: column;
         align-items: flex-start;
@@ -389,4 +401,4 @@ fieldset {
     main {
         font-size: 1rem;
     }
-}
+} 
