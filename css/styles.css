@@ -322,9 +322,10 @@ address{
 
 
 @media only screen and (max-width: 1030px) {
+
     .cabecalho {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .cabecalho a {
@@ -333,12 +334,13 @@ address{
     }
 
     .logoheader {
-        width: 50%; 
+        width: 100%; 
+        align-items: center;
         
     }
 
     .pesquisa {
-        width: 100%;
+        width: 60%;
         margin-bottom: 1rem;
     }
 
