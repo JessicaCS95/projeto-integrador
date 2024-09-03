@@ -90,7 +90,7 @@ header {
     width: 100%;
     display: flex;
     background-size: cover;
-    background-image: url(/img/fundo_madeira.png);
+    background-image: url(../img/fundo_madeira.png);
     background-repeat: no-repeat;
     height: 10rem;
     justify-content: center;
