@@ -22,11 +22,14 @@ header {
     left: 0;
     width: 100%;
     background-color: #a47c4c;
-    text-align: center;
     padding: 0.4rem 0;
+    display: flex;
+    flex-direction: row;
 }
 
-
+i#burguer{
+    display: none;
+}
 .cabecalho {
     display: flex;
     flex-direction: row;
@@ -34,6 +37,10 @@ header {
     font-weight: bold;
     align-items: center;
     width: 100%;    
+}
+
+.logoheader{
+    margin: 1%;
 }
 
 .menu1,
@@ -323,7 +330,31 @@ address{
 
 @media only screen and (max-width: 1030px) {
 
+    header{
+        display:flex;
+        
+    }
+
+    i#burguer{
+        display: flex;
+        margin: auto;
+        color:#2c1c04;
+        padding: 1%;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+
+    i#burguer:hover{
+        color:#d4ccb4;
+    }
+
+    .iconperfil{
+        margin: auto;
+    }
+
     .cabecalho {
+        display: none;
         flex-direction: column;
         align-items: center;
     }
@@ -333,11 +364,7 @@ address{
         font-size: 1rem; 
     }
 
-    .logoheader {
-        width: 100%; 
-        align-items: center;
-        
-    }
+   
 
     .pesquisa {
         width: 60%;
@@ -391,60 +418,4 @@ address{
     }
 
     
-}
-
-
-@media only screen and (max-width: 480px) {
-    .cabecalho a {
-        font-size: 0.8rem;
-        width: 100%;
-    }
-
-    
-
-    .txtbusca {
-        font-size: 0.8rem;
-        width: 80%;
-    }
-
-    .textoh1 h1 {
-        font-size: 1.5rem;
-    }
-
-    .contatos {
-        display: flex;
-        flex-direction: row;
-    }
-
-    main {
-        font-size: 1rem;
-    }
-
-   
-    .fundo {
-        padding: 1rem;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logofooter {
-        width: 80%;
-        min-width: 40%;
-        height: auto;
-        
-    }
-
-    .contatos,
-    .endereco,
-    .pag {
-        flex-direction: column;
-        text-align: left;
-        font-size: 0.8rem; 
-        
-    }
-
-
-    .icone {
-        width: 1rem;
-    }
 }

@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <nav class="cabecalho">
-            <div class="logoheader"> <img src="img/logo_header.png" alt="logo" width="200rem" height="100rem">
-            </div>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+
+        <div class="logoheader"> <img src="img/logo_header.png" alt="logo" width="200rem" height="100rem">
+        </div>
+        <nav id="menu" class="cabecalho">
+            
 
                 <div class="menu1"><a href="#">QUEM SOMOS</a></div>
                 <div class="menu2"><a href="#">CATÁLOGO</a></div>
@@ -27,6 +32,7 @@
           </div>
           <div class="perfil"><a href="#"><img src="./img/perfil.png" class="iconperfil"></a></div>
         </nav>
+        
     </header>
 
     <div class="buttonzap">
