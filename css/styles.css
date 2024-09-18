@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    
+
 }
 
 body {
@@ -27,34 +27,37 @@ header {
     flex-direction: row;
 }
 
-i#burguer{
+i#burguer {
     display: none;
 }
+
 .cabecalho {
     display: flex;
     flex-direction: row;
     font-family: "Montserrat", 'Courier New', Courier, monospace;
     font-weight: bold;
     align-items: center;
-    width: 100%;    
+    width: 100%;
 }
 
-.logoheader{
+.logoheader {
     margin: 1%;
 }
 
-.logoheader img{
-    width: 200px;
-    height: 100px;
+.logoheader img {
+    width: 12.5rem;
+    height: 6.25rem;
 }
 
 .menu1,
 .menu2,
-.menu3, .menu4, .menu5{
+.menu3,
+.menu4,
+.menu5 {
     flex: 1;
     padding: 1%;
     text-align: center;
-    
+
 }
 
 .cabecalho a {
@@ -64,7 +67,7 @@ i#burguer{
     white-space: nowrap;
 }
 
-.pesquisa{
+.pesquisa {
     background-color: #d4ccb4;
     border: solid #d4ccb4 0.2rem;
     border-radius: 0.625rem;
@@ -73,8 +76,8 @@ i#burguer{
     justify-content: space-between;
     margin: auto;
     width: 20%;
-} 
-   
+}
+
 
 
 .txtbusca {
@@ -82,21 +85,27 @@ i#burguer{
     border: none;
     min-width: 9.375rem;
     width: 100%;
-    
+
 }
 
-.lupa{
+.lupa {
     width: 1.5rem;
 }
 
-.perfil{
+.perfil {
     margin: auto;
 }
 
 
-.iconperfil{
+.iconperfil {
     width: 4rem;
 }
+
+.menu-mobile {
+    display: none;
+}
+
+
 
 .fundomadeira {
     width: 100%;
@@ -129,7 +138,7 @@ main {
     padding: 1rem;
     max-width: 600px;
     margin: auto;
-} 
+}
 
 form {
     display: flex;
@@ -153,6 +162,7 @@ form {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    box-shadow: 1px 1px 1px black;
 }
 
 .cpfedata {
@@ -205,6 +215,7 @@ form {
     color: #fff;
     font-weight: bold;
     cursor: pointer;
+
 }
 
 .fieldset {
@@ -253,54 +264,56 @@ fieldset {
 
 .logofooter {
     width: 22%;
- 
+
 }
 
 .contatos,
-.endereco, .pag{
+.endereco,
+.pag {
     display: flex;
     flex-direction: column;
     font-size: 1.1rem;
-      
+
 }
 
-.email, .tel{
+.email,
+.tel {
     display: flex;
     flex-direction: row;
     width: 100%;
     font-size: 0.9rem;
     justify-content: left;
-    
+
 }
 
-.mailto{
+.mailto {
     text-decoration: none;
     color: inherit;
 }
 
-.mailto:hover{
+.mailto:hover {
     text-decoration: underline;
 }
 
-.pag{
+.pag {
     margin-top: 1.8rem;
     margin-bottom: 0;
     white-space: nowrap;
 }
 
 .contatos,
-.endereco{
+.endereco {
     margin-bottom: 0.5rem;
-    
+
 }
 
-address{
+address {
     white-space: nowrap;
     font-size: 0.9rem;
 }
 
 .icone {
-    width: 1.2rem; 
+    width: 1.2rem;
 }
 
 
@@ -333,55 +346,106 @@ address{
 }
 
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1000px) {
 
-    header{
-        display:flex;
-        
-    }
-
-    .logoheader img{
-        content: url(../img/planejados.png);
-        width: 150px ;
-        height: 100px;
-        
-    }
-
-    i#burguer{
+    header {
+        width: 100%;
         display: flex;
-        margin: auto;
-        color:#2c1c04;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logoheader img {
+        width: 170px;
+        height: 85px;
+
+    }
+
+    .cabecalho-mobile {
+        display: flex;
+        width: 100%;
+    }
+
+
+
+    i#burguer {
+        display: flex;
+        color: #2c1c04;
         padding: 1%;
         cursor: pointer;
+        font-size: 3rem;
+
+    }
+
+
+
+    i#burguer:hover {
+        zoom: 105%;
+
+    }
+
+    .menu-mobile {
+        position: absolute;
+        background-color: #a47c4c;
+        top: 15%;
+        left: 0;
         width: 100%;
-        height: 100%;
+
     }
 
-    i#burguer:hover{
-        color:#d4ccb4;
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+
     }
 
-    .iconperfil{
-        margin: auto;
+    .menu-mobile .nav-item {
+        display: flex;
+        padding: 0.75rem;
+        border-bottom: 2px solid #2c1c04;
+
     }
+
+    .menu-mobile .nav-item a {
+        text-decoration: none;
+        color: #2c1c04;
+        font-size: 1rem;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    .nav-item a {
+        transition: 1s;
+    }
+
+    .nav-item a:hover {
+        background-color: #2c1c04;
+        color: #d4ccb4;
+        padding: 5px 10px;
+        border-radius: 7px;
+
+    }
+
+
+
+    .open {
+        display: block;
+    }
+
+
 
     .cabecalho {
         display: none;
-        flex-direction: column;
-        align-items: center;
+
     }
 
-    .cabecalho a {
-        margin: 0.25rem 0;
-        font-size: 1rem; 
-    }
-
-   
-
-    .pesquisa {
-        width: 60%;
-        margin-bottom: 1rem;
-    }
 
     .cpfedata {
         flex-direction: column;
@@ -397,14 +461,14 @@ address{
         width: 100%;
     }
 
-    
+
     .fundo {
         flex-direction: column;
     }
 
     .logofooter {
         width: 35%;
-        
+
     }
 
     .imgpagamento {
@@ -413,15 +477,17 @@ address{
     }
 
     .contatos,
-    .endereco, .pag {
+    .endereco,
+    .pag {
         flex-direction: column;
         align-items: center;
         margin-top: 1.4rem;
-        
-        
+
+
     }
 
-    .email, .tel {
+    .email,
+    .tel {
         justify-content: left;
     }
 
@@ -429,5 +495,5 @@ address{
         margin: 0;
     }
 
-    
+
 }

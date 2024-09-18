@@ -13,26 +13,42 @@
 
 <body>
     <header>
-        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <div class="container">
 
-        <div class="logoheader"> <img class="imglogoheader" src="img/logo_header.png" alt="logo">
+            <div class="logoheader"> <img class="imglogoheader" src="img/logo_header.png" alt="logo">
+            </div>
+            <div id="menuButton"><i id="burguer" class="material-icons" onclick="menuShow()">menu</i></div>
         </div>
         <nav id="menu" class="cabecalho">
-            
 
-                <div class="menu1"><a href="#">QUEM SOMOS</a></div>
-                <div class="menu2"><a href="#">CATÁLOGO</a></div>
-                <div class="menu3"><a href="#">PORTFÓLIO</a></div>
-                <div class="menu4"><a href="#">ORÇAMENTO</a></div>
-                <div class="menu5"><a href="#">BLOG</a></div>
-            
+
+            <div class="menu1"><a href="#">QUEM SOMOS</a></div>
+            <div class="menu2"><a href="#">CATÁLOGO</a></div>
+            <div class="menu3"><a href="#">PORTFÓLIO</a></div>
+            <div class="menu4"><a href="#">ORÇAMENTO</a></div>
+            <div class="menu5"><a href="#">BLOG</a></div>
+
             <div class="pesquisa">
-                <img src="img/lupa.png" class="lupa" alt="Buscar"/> 
-            <input type="text" class="txtbusca" placeholder="Buscar..." />
-          </div>
-          <div class="perfil"><a href="#"><img src="./img/perfil.png" class="iconperfil"></a></div>
+                <img src="img/lupa.png" class="lupa" alt="Buscar" />
+                <input type="text" class="txtbusca" placeholder="Buscar..." />
+            </div>
+            <div class="perfil"><a href="#"><img src="./img/perfil.png" class="iconperfil"></a></div>
         </nav>
-        
+
+        <div class="menu-mobile">
+
+            <ul>
+                <li class="nav-item"><a href="#">LOGIN / CADASTRO</a></li>
+                <li class="nav-item"><a href="#">QUEM SOMOS</a></li>
+                <li class="nav-item"><a href="#">CATÁLOGO</a></li>
+                <li class="nav-item"><a href="#">PORTFÓLIO</a></li>
+                <li class="nav-item"><a href="#">ORÇAMENTO</a></li>
+                <li class="nav-item"><a href="#">BLOG</a></li>
+            </ul>
+
+
+        </div>
+
     </header>
 
     <div class="buttonzap">
@@ -113,42 +129,41 @@
     <footer>
         <div class="fundo">
             <div class="logofooter">
-                <img src="img/logo_footer.png"
-                    alt="Logo na horizontal" width="100%">
+                <img src="img/logo_footer.png" alt="Logo na horizontal" width="100%">
             </div>
 
 
             <div>
                 <p class="contatos">CONTATOS</p>
                 <div>
-                    <p class="email"> <img src="img/email.png"
-                        alt="Ícone e-mail" class="icone" > <a href="mailto:ribeiroplanejados@gmail.com.br" class="mailto">ribeiroplanejados@gmail.com.br</a> </p>
-                    
-                    <p class="tel" >
-                        <img src="img/tel.png"
-                            alt="Ícone telefone" class="icone"> (11) 2222 - 2222
+                    <p class="email"> <img src="img/email.png" alt="Ícone e-mail" class="icone"> <a
+                            href="mailto:marcenariazequinha@yahoo.com.br"
+                            class="mailto">ribeiroplanejados@gmail.com.br</a> </p>
+
+                    <p class="tel">
+                        <img src="img/tel.png" alt="Ícone telefone" class="icone"> (11)98109-4528
                     </p>
-                    
+
                 </div>
             </div>
 
             <div>
                 <p class="endereco">ENDEREÇO</p>
                 <div>
-                    <address class="local">  Rua Dr. Antônio Bento 393,
+                    <address class="local"> Av. Alcântara Machado, 2293
                     </address>
-                    <address class="local">São Paulo, SP, 04750-000 </address>
-                    
-                    
+                    <address class="local">São Paulo, SP, 03101-001 </address>
+
+
                 </div>
             </div>
 
             <div>
                 <p class="pag">FORMAS DE PAGAMENTO</p>
-                <div class="imgpagamento" >
+                <div class="imgpagamento">
                     <img src="img/formapag.png" alt="formas de pagamento" width="250rem">
-                    
-                    
+
+
                 </div>
             </div>
 
