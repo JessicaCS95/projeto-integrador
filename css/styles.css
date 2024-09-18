@@ -43,6 +43,11 @@ i#burguer{
     margin: 1%;
 }
 
+.logoheader img{
+    width: 200px;
+    height: 100px;
+}
+
 .menu1,
 .menu2,
 .menu3, .menu4, .menu5{
@@ -332,6 +337,13 @@ address{
 
     header{
         display:flex;
+        
+    }
+
+    .logoheader img{
+        content: url(../img/planejados.png);
+        width: 150px ;
+        height: 100px;
         
     }
 
