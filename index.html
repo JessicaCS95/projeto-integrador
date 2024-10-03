@@ -8,6 +8,8 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
     <script src="js/script.js" defer></script>
 </head>
 
@@ -88,8 +90,11 @@
             <input type="text" name="email" class="dados">
             <label class="label" for=" celular">Celular:</label>
             <input type="number" name="tel" class="dados">
-            <label class="label" for=" senha">Crie uma senha:</label>
-            <input type="password" name="senha" class="dados">
+            <div class="senha-login">
+                <label class="label" for=" senha">Crie uma senha:</label>
+                <input type="password" name="senha" class="dados" id="login-senha">
+                <i class="bi bi-eye-fill" id="eye-senha" onclick="mostrarSenha()"></i>
+            </div>
             <label class="label" for=" senha">Repita a senha:</label>
             <input type="password" name="verificaSenha" class="dados">
 

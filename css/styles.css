@@ -150,10 +150,9 @@ form {
 .dados, .email-login3, .login-senha {
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #ccc;
+  border: 0;
   border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: 1px 1px 1px #2c1c04;
+  outline: 0;
   
 }
 
@@ -181,6 +180,19 @@ form {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.senha-login{
+  position: relative;
+}
+
+.bi-eye-fill, .bi-eye-slash-fill{
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  bottom: 1.5%;
+  
 }
 
 .inline {
@@ -382,8 +394,9 @@ address {
     font-weight: bold;
     text-align: center  ;
     cursor: pointer;
-
   }
+
+  
 
 @media only screen and (max-width: 1000px) {
   header {
