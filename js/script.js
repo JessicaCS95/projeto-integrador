@@ -32,3 +32,25 @@ function mostrarSenha(){
     }
 }
 
+// Menu Carrossel
+
+const radio = document.querySelector('.manual-btn');
+const cont = 1;
+
+document.getElementById('banner1').checked = true;
+
+setInterval(() => {
+    proximoBanner()
+}, 1000)
+
+function proximoBanner(){
+    cont++
+
+    if(cont > 3){
+        cont = 1
+    }
+
+    document.getElementById("banner"+cont).checked = true;
+
+
+}
