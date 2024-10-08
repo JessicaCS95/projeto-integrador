@@ -32,25 +32,34 @@ function mostrarSenha(){
     }
 }
 
-// Menu Carrossel
-
-const radio = document.querySelector('.manual-btn');
-const cont = 1;
-
-document.getElementById('banner1').checked = true;
-
-setInterval(() => {
-    proximoBanner()
-}, 1000)
-
-function proximoBanner(){
-    cont++
-
-    if(cont > 3){
-        cont = 1
-    }
-
-    document.getElementById("banner"+cont).checked = true;
 
 
+//evento alert
+
+function logar() {
+    const login = document.getElementById("botaoLogin").value;
+    alert("Bem Vindo!");
 }
+
+// mudança de cor do botão
+
+window.onload = function () {
+    const botao = document.getElementById("botaoLogin");
+  
+    if (botao) {
+      botao.addEventListener("mouseover", () => {
+        botao.style.backgroundColor = "#2c1c04";
+      });
+  
+      botao.addEventListener("mouseout", () => {
+        botao.style.backgroundColor = "#a37c4c";
+      });
+    } else {
+      console.log("O botão de login não foi encontrado.");
+    }
+  };
+
+
+//Focus
+
+document.getElementById('email-login').focus();
