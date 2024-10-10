@@ -1,3 +1,15 @@
+//Icone Login
+function loginCadastro(){
+    let openLoginCadastro = document.querySelector('.open-login-cadastro');
+    if (openLoginCadastro.classList.contains('open2')){
+        openLoginCadastro.classList.remove('open2');
+    }else {
+        openLoginCadastro.classList.add('open2')
+    }
+}
+
+// Menu hamburguer
+
 function menuShow() {
     let menuMobile = document.querySelector('.menu-mobile');
     if (menuMobile.classList.contains('open')) {
@@ -19,6 +31,8 @@ menuButton.addEventListener('click', function () {
     }
 });
 
+//olho senha
+
 function mostrarSenha(){
     const inputPass = document.getElementById('login-senha');
     const btnShowPass = document.getElementById('eye-senha');
@@ -31,6 +45,20 @@ function mostrarSenha(){
         btnShowPass.classList.replace('bi-eye-slash-fill', 'bi-eye-fill');
     }
 }
+function mostrarSenha2(){
+    const inputPass = document.getElementById('verificaSenha');
+    const btnShowPass = document.getElementById('eye-senha2');
+
+    if(inputPass.type === 'password'){
+        inputPass.setAttribute('type', 'text')
+        btnShowPass.classList.replace('bi-eye-fill', 'bi-eye-slash-fill');
+    }else{
+        inputPass.setAttribute('type', 'password')
+        btnShowPass.classList.replace('bi-eye-slash-fill', 'bi-eye-fill');
+    }
+}
+
+
 
 
 
@@ -63,3 +91,5 @@ window.onload = function () {
 //Focus
 
 document.getElementById('email-login').focus();
+
+

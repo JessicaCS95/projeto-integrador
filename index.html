@@ -34,7 +34,13 @@
                 <img src="img/lupa.png" class="lupa" alt="Buscar" />
                 <input type="text" class="txtbusca" placeholder="Buscar..." />
             </div>
-            <div class="perfil"><a href="#"><img src="./img/perfil.png" class="iconperfil"></a></div>
+            <div class="perfil"><a href="" onclick="loginCadastro()"><img src="./img/perfil.png" class="iconperfil" id="iconPerfil" ></a>
+            <span class="open-login-cadastro">
+                <ul>
+                    <li class="log-cad">Logar</li>
+                    <li class="log-cad">Cadastrar</li>
+                </ul>
+            </span></div>
         </nav>
 
         <div class="menu-mobile">
@@ -95,8 +101,12 @@
                 <input type="password" name="senha" class="dados" id="login-senha">
                 <i class="bi bi-eye-fill" id="eye-senha" onclick="mostrarSenha()"></i>
             </div>
-            <label class="label" for=" senha">Repita a senha:</label>
-            <input type="password" name="verificaSenha" class="dados">
+            <div class="senha-login">
+                <label class="label" for=" senha">Repita a senha:</label>
+                <input type="password" name="verificaSenha" class="dados" id="verificaSenha">
+                <i class="bi bi-eye-fill" id="eye-senha2" onclick="mostrarSenha2()"></i>
+            </div>
+            
 
         <div class="inline">
 

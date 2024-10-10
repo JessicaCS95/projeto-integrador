@@ -96,6 +96,42 @@ i#burguer {
   width: 4rem;
 }
 
+.open-login-cadastro{
+  display: none;
+}
+
+.open-login-cadastro.open2 {
+  display: block;
+}
+
+.openLoginCadastro {
+  position: absolute;
+  background-color: #a47c4c;
+  top: 12%;
+  left: 0;
+  width: 100%;
+}
+
+.openLoginCadastro ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.openLoginCadastro .nav-item {
+  display: flex;
+  padding: 0.75rem;
+  border-bottom: 2px solid #2c1c04;
+}
+
+.menu-mobile .log-cad a {
+  text-decoration: none;
+  color: #2c1c04;
+  font-size: 1rem;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
 .menu-mobile {
   display: none;
 }
@@ -522,6 +558,7 @@ address {
     top: 12%;
     left: 0;
     width: 100%;
+    z-index: 1;
   }
 
   .menu-mobile ul {
@@ -558,6 +595,7 @@ address {
   .open {
     display: block;
   }
+
 
   .cabecalho {
     display: none;
