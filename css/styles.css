@@ -6,13 +6,13 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: #d4ccb4;
-  font-family: "Open Sans", sans-serif;
 }
 
 /* Menu Navegação */
@@ -62,7 +62,7 @@ i#burguer {
 .cabecalho a {
   text-decoration: none;
   color: #2c1c04;
-  font-size: 1rem;
+  font-size: 1.5rem;
   white-space: nowrap;
 }
 
@@ -171,6 +171,7 @@ main {
   padding: 1rem;
   max-width: 37.5rem;
   margin: auto;
+  width: 100%;
 }
 
 /* Home */
@@ -242,10 +243,87 @@ section.slider{
   background-color: #2c1c04;
 }
 
+/* Main */
+
+/*Faixinha */
+
+.faixinha{
+  display: flex;
+  width: 100%; 
+}
+
+.listafaixinha{
+  display: flex;
+  width: 100%;
+  background-color: #f3ecd4;
+  padding: 1%; 
+}
+
+.iconesf{
+display:flex;
+margin: auto;
+}
+
+.pfaixinha{
+  color: #2c1c04;
+  font-size: 1.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+
+.faixinhaEntrega{
+  width: 100%;
+  display: flex;
+  margin: 3rem 0;
+}
+
+.caminhao{
+  padding: 1%;
+}
+.pfaixinha2{
+  display: flex;
+  color: #a47c4c;
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 100%;
+  white-space: nowrap;
+  padding: 1%;
+  
+}
+
+/* Decorados */
+
+.decorados{
+  display: flex;
+  width: 100%;
+  margin-left: 0;
+  overflow: hidden;
+}
+
+/* Avaliação Clientes */
+
+.clientes{
+  color: #2c1c04;
+  font-size: 1.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.avaliacoes{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3rem 0;
+}
 
 
 
-/* Main Cadastro */
+/* Cadastro */
 
 form {
   display: flex;
@@ -400,7 +478,7 @@ fieldset {
   display: flex;
   flex-direction: row;
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   justify-content: left;
 }
 
@@ -426,7 +504,7 @@ fieldset {
 
 address {
   white-space: nowrap;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .icone {
