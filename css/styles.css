@@ -681,7 +681,7 @@ address {
   .pfaixinha2{
     font-size: 1.1rem;
     padding: 0;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 0;
   }
 
@@ -689,6 +689,8 @@ address {
 
   .caminhao{
     padding: 0;
+    width: 25%;
+    height:auto;
   }
   /* Decorados */
 
