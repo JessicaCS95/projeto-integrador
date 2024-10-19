@@ -691,7 +691,7 @@ address {
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
-    white-space: wrap;
+    white-space: nowrap;
   }
 
 
