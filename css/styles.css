@@ -56,7 +56,6 @@ i#burguer {
   height: 6.25rem;
 }
 
-.menu0,
 .menu1,
 .menu2,
 .menu3,
@@ -74,27 +73,7 @@ i#burguer {
   white-space: nowrap;
 }
 
-.pesquisa {
-  background-color: #d4ccb4;
-  border: solid #d4ccb4 0.2rem;
-  border-radius: 0.625rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
-  width: 20%;
-}
 
-.txtbusca {
-  background-color: transparent;
-  border: none;
-  min-width: 9.375rem;
-  width: 100%;
-}
-
-.lupa {
-  width: 1.5rem;
-}
 
 .perfil {
   margin: auto;
@@ -699,19 +678,18 @@ address {
 
   /* Faixinha entrega */
 
-  .faixinhaEntrega{
-    margin:0;
-  }
-
-  .faixinhaentrega1{
-    display: flex;
-    
-  }
   .pfaixinha2{
-    font-size: 1.2rem;
-    text-align: center;
+    font-size: 1.1rem;
+    padding: 0;
+    margin-top: 2%;
+    margin-left: 0;
   }
 
+  
+
+  .caminhao{
+    padding: 0;
+  }
   /* Decorados */
 
   .decorados{
