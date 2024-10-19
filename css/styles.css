@@ -679,19 +679,15 @@ address {
   /* Faixinha entrega */
 
   .pfaixinha2{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding: 0;
     margin-top: 1%;
     margin-left: 0;
+    white-space: wrap;
   }
-
   
 
-  .caminhao{
-    padding: 0;
-    width: 25%;
-    height:auto;
-  }
+
   /* Decorados */
 
   .decorados{
