@@ -15,56 +15,44 @@
 
 <body>
     <header>
+        <!-- WhatsApp -->
+   <div class="buttonzap">
+       <a href="https://api.whatsapp.com/send?phone=SEUNUMERO" class="icon" target="_blank">
+           <i class="fab fa-whatsapp"></i>
+       </a>
+   </div>
+   
+       <!-- Menu Principal -->
+       <nav id="menu" class="cabecalho">
+           <div class="logoheader"> <a href="index.html"><img class="imglogoheader" src="img/logo_header.png" alt="logo"></a>
+           </div>
+           <div class="menu1"><a class="a" href="quemsomos.html">Quem Somos</a></div>
+           <div class="menu2"><a class="a" href="#">Catálogo</a></div>
+           <div class="menu3"><a class="a" href="#">Portfólio</a></div>
+           <div class="menu4"><a class="a" href="#">Orçamento</a></div>
+           <div class="menu5"><a class="a" href="#">Blog</a></div>
+
+           <div class="perfil"><a href="#"><img src="./img/perfil.png" class="iconperfil"></a></div>
+       </nav>
+
+        <!-- Menu Mobile -->
         <div class="container">
+           <div class="logoHeaderBurger"> <a href="index.html"><img class="imglogoheader" src="img/logo_header.png" alt="logo"></a>
+           </div>
+           <div id="menuButton"><i id="burguer" class="material-icons" onclick="menuShow()">menu</i></div>
+       </div>
 
-            <div class="logoheader"> <a href="index.html"><img class="imglogoheader" src="img/logo_header.png" alt="logo"> </a>
-            </div>
-            <div id="menuButton"><i id="burguer" class="material-icons" onclick="menuShow()">menu</i></div>
-        </div>
-        <nav id="menu" class="cabecalho">
-
-
-            <div class="menu1"><a href="quemsomos.html">QUEM SOMOS</a></div>
-            <div class="menu2"><a href="#">CATÁLOGO</a></div>
-            <div class="menu3"><a href="#">PORTFÓLIO</a></div>
-            <div class="menu4"><a href="#">ORÇAMENTO</a></div>
-            <div class="menu5"><a href="#">BLOG</a></div>
-
-            <div class="pesquisa">
-                <img src="img/lupa.png" class="lupa" alt="Buscar" />
-                <input type="text" class="txtbusca" placeholder="Buscar..." />
-            </div>
-            <div class="perfil"><a href="" onclick="loginCadastro()"><img src="./img/perfil.png" class="iconperfil" id="iconPerfil" ></a>
-            <span class="open-login-cadastro">
-                <ul>
-                    <li class="log-cad">Logar</li>
-                    <li class="log-cad">Cadastrar</li>
-                </ul>
-            </span></div>
-        </nav>
-
-        <div class="menu-mobile">
-
-            <ul>
-                <li class="nav-item"><a href="login.html">LOGIN </a><a href="cadastro.html"> / CADASTRO</a></li>
-                <li class="nav-item"><a href="#">QUEM SOMOS</a></li>
-                <li class="nav-item"><a href="#">CATÁLOGO</a></li>
-                <li class="nav-item"><a href="#">PORTFÓLIO</a></li>
-                <li class="nav-item"><a href="#">ORÇAMENTO</a></li>
-                <li class="nav-item"><a href="#">BLOG</a></li>
-            </ul>
-
-
-        </div>
-
-    </header>
-
-    <div class="buttonzap">
-        <a href="https://api.whatsapp.com/send?phone=SEUNUMERO" class="icon" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
-
+       <div class="menu-mobile">
+           <ul>
+               <li class="nav-item"><a href="login.html">LOGIN </a> <a href="cadastro.html"> / CADASTRO</a></li>
+               <li class="nav-item"><a href="quemsomos.html">QUEM SOMOS</a></li>
+               <li class="nav-item"><a href="#">CATÁLOGO</a></li>
+               <li class="nav-item"><a href="#">PORTFÓLIO</a></li>
+               <li class="nav-item"><a href="#">ORÇAMENTO</a></li>
+               <li class="nav-item"><a href="#">BLOG</a></li>
+           </ul>
+       </div>
+   </header>
     <div class="fundomadeira">
         <div class="textoh1">
             <h1>Cadastro</h1>
