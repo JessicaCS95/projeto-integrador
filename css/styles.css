@@ -180,6 +180,7 @@ main {
   max-width: 37.5rem;
   margin: auto;
   width: 100%;
+
 }
 
 /* Home */
@@ -196,6 +197,7 @@ main {
   width: 100%;
   background-color: #f3ecd4;
   padding: 1%; 
+  
 }
 
 .iconesf{
@@ -205,16 +207,22 @@ margin: auto;
 
 .pfaixinha{
   color: #2c1c04;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: bold;
   white-space: nowrap;
+  margin-top: 5%;
 }
 
 /* Faixinha entrega */
+
 .faixinhaEntrega{
   width: 100%;
   display: flex;
   margin: 3rem 0;
+}
+
+.faixinhaentrega1{
+  width: 100%;
 }
 
 .caminhao{
@@ -236,8 +244,10 @@ margin: auto;
 .decorados{
   display: flex;
   width: 100%;
-  margin-left: 0;
-  overflow: hidden;
+}
+
+.decorados img{
+  width: 98%;
 }
 
 /* Avaliação Clientes */
@@ -250,14 +260,21 @@ margin: auto;
   text-align: center;
   margin-top: 5rem;
   margin-bottom: 3rem;
+  width: 100%;
+  
 }
 
 .avaliacoes{
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-around;
+  justify-content:space-around;
   margin: 3rem 0;
+  
+}
+
+.av1, .av2, .av3{
+  width: 98%;
 }
 
 #carouselExampleSlidesOnly{
@@ -704,14 +721,14 @@ address {
   }
 
   .decor1, .decor2, .decor3{
-   margin: auto;
+   margin:auto;
   }
 
 
   /* Avaliação Clientes */
 
   .clientes{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   #carouselExampleSlidesOnly{
