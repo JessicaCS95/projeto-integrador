@@ -197,16 +197,14 @@ margin: auto;
 .faixinhaEntrega{
   width: 100%;
   display: flex;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .faixinhaentrega1{
   width: 100%;
 }
 
-.caminhao{
-  padding: 1%;
-}
+
 .pfaixinha2{
   display: flex;
   color: #a47c4c;
@@ -678,14 +676,24 @@ address {
 
   /* Faixinha entrega */
 
+  .faixinhaEntrega{
+    display: flex;
+    flex-direction: column;
+    background-color:#d4ccb4;
+  }
+
+  .faixinhaentrega1{
+    display: flex;
+    justify-content: center;
+  }
+
   .pfaixinha2{
-    font-size: 1.5rem;
-    padding: 0;
-    margin-top: 1%;
-    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
     white-space: wrap;
   }
-  
+
 
 
   /* Decorados */
