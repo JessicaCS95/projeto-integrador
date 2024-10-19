@@ -56,6 +56,7 @@ i#burguer {
   height: 6.25rem;
 }
 
+.menu0,
 .menu1,
 .menu2,
 .menu3,
@@ -100,7 +101,7 @@ i#burguer {
 }
 
 .iconperfil {
-  width: 4rem;
+  width: 5rem;
 }
 
 .open-login-cadastro{
@@ -183,12 +184,6 @@ main {
 
 /* Home */
 
-/* Slide*/
-
-
-
-/* Main */
-
 /*Faixinha */
 
 .faixinha{
@@ -215,7 +210,7 @@ margin: auto;
   white-space: nowrap;
 }
 
-
+/* Faixinha entrega */
 .faixinhaEntrega{
   width: 100%;
   display: flex;
@@ -263,6 +258,10 @@ margin: auto;
   align-items: center;
   justify-content: space-around;
   margin: 3rem 0;
+}
+
+#carouselExampleSlidesOnly{
+  display: none;
 }
 
 
@@ -542,25 +541,38 @@ address {
   
 
 @media only screen and (max-width: 1000px) {
+
+
   header {
     width: 100%;
     display: flex;
   }
 
+  /* Menu-Mobile */
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 5rem;
+    padding: 1%;
   }
 
-  .logoheader img {
-    width: 170px;
-    height: 85px;
+  .imglogoheader{
+    padding: 1%;
   }
 
   .cabecalho-mobile {
     display: flex;
+    width: 100%;
+  }
+
+  #carouselExampleIndicators{
+    z-index: 0;
+  }
+
+  .d-block{
+    height: 15rem;
     width: 100%;
   }
 
@@ -631,6 +643,8 @@ address {
     display: none;
   }
 
+  /* Form Cadastro */
+
   .cpfedata {
     flex-direction: column;
     gap: 0.5rem;
@@ -644,6 +658,72 @@ address {
   .fimform input {
     width: 100%;
   }
+
+  /* Faixinha */
+
+  .listafaixinha{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f3ecd4;
+    padding: 1%; 
+  }
+
+  .iconesf img{
+    width: 2rem;
+    height: 2rem;
+  }
+  .pfaixinha{
+    color: #2c1c04;
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  /* Faixinha entrega */
+
+  .faixinhaEntrega{
+    margin:0;
+  }
+
+  .faixinhaentrega1{
+    display: flex;
+    
+  }
+  .pfaixinha2{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  /* Decorados */
+
+  .decorados{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .decor1, .decor2, .decor3{
+   margin: auto;
+  }
+
+
+  /* Avaliação Clientes */
+
+  .clientes{
+    font-size: 1.5rem;
+  }
+
+  #carouselExampleSlidesOnly{
+    display: block;
+    margin-bottom: 20%;
+  }
+
+  .avaliacoes{
+    display: none;
+  }
+
+  /* Footer */
 
   .fundo {
     flex-direction: column;
