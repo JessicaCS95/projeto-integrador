@@ -16,7 +16,6 @@ body {
 }
 
 
-
 /* Menu Navegação */
 
 header {
@@ -164,17 +163,24 @@ main {
 
 /* Home */
 
+.corfundo{
+  background-color: #d4ccb4;
+  margin: 0;
+  
+}
+
 /*Faixinha */
 
 .faixinha{
   display: flex;
   width: 100%; 
+  background-color:#f3ecd4;
+  margin-bottom: 0;
 }
 
 .listafaixinha{
   display: flex;
   width: 100%;
-  background-color: #f3ecd4;
   padding: 1%; 
   
 }
@@ -195,32 +201,39 @@ margin: auto;
 /* Faixinha entrega */
 
 .faixinhaEntrega{
-  width: 100%;
   display: flex;
-  margin: 2rem 0;
+  background-color:#d4ccb4;
+  width: 100%;
+}
+
+.faixinhaEntrega2{
+  display: flex;
+  margin: auto;
+  padding: 2%;
 }
 
 .faixinhaentrega1{
-  width: 100%;
+  padding: 0 1%;
 }
 
-
 .pfaixinha2{
-  display: flex;
   color: #a47c4c;
   font-size: 1.8rem;
   font-weight: bold;
-  width: 100%;
+  padding: 0 2%;
   white-space: nowrap;
-  padding: 1%;
-  
 }
+
+
+
+
 
 /* Decorados */
 
 .decorados{
   display: flex;
   width: 100%;
+  background-color:#d4ccb4;
 }
 
 .decorados img{
@@ -229,14 +242,17 @@ margin: auto;
 
 /* Avaliação Clientes */
 
+.avaliacaoClientes{
+  background-color:#d4ccb4;
+  padding: 3% 0;
+}
+
 .clientes{
   color: #2c1c04;
   font-size: 1.8rem;
   font-weight: bold;
   white-space: nowrap;
   text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
   width: 100%;
   
 }
@@ -247,6 +263,7 @@ margin: auto;
   align-items: center;
   justify-content:space-around;
   margin: 3rem 0;
+  background-color:#d4ccb4;
   
 }
 
@@ -678,23 +695,16 @@ address {
 
   /* Faixinha entrega */
 
-  .faixinhaEntrega{
-    display: flex;
-    flex-direction: column;
-    background-color:#d4ccb4;
+ .pfaixinha2{
+  margin-top: 1%;
+  font-size: 1rem;
+ }
+
+  .caminhao{
+    width: 2rem;
+    height: 2rem;
   }
 
-  .faixinhaentrega1{
-    display: flex;
-    justify-content: center;
-  }
-
-  .pfaixinha2{
-    display: flex;
-    justify-content: center;
-    font-size: 1.2rem;
-    white-space: nowrap;
-  }
 
 
 
@@ -703,17 +713,24 @@ address {
   .decorados{
     display: flex;
     flex-direction: column;
+    padding: 1%;
     
   }
 
   .decor1, .decor2, .decor3{
    margin:auto;
+   padding: 1%;
   }
 
 
   /* Avaliação Clientes */
 
+  .avaliacaoClientes{
+    padding: 5% 0 ;
+  }
+
   .clientes{
+    margin: 5% 0;
     font-size: 1.3rem;
   }
 
