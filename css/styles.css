@@ -22,10 +22,11 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #a47c4c;
-  padding: 0.4rem 0;
+  background-color:#d4ccb4;
+  padding: 0.3rem 0 3rem 0;
   display: flex;
   flex-direction: row;
+  
 }
 
 i#burguer {
@@ -37,22 +38,32 @@ i#burguer {
 }
 
 .cabecalho {
+  background-color:#2c1c04;
   display: flex;
   flex-direction: row;
   font-family: "Montserrat", "Courier New", Courier, monospace;
   font-weight: bold;
   align-items: center;
-  width: 100%;
+  margin: auto;
+  box-shadow: 1px 1px 5px 1px #2c1c04 ;
+  padding: 0 0 0 10rem;
 }
 
 .logoheader {
-  
+  display: flex;
   margin: 1%;
 }
 
+
+
 .imglogoheader {
-  width: 12.5rem;
-  height: 6.25rem;
+  display: flex;
+  position: absolute;
+  margin: auto;
+  width: 12rem;
+  height: 6rem;
+  box-shadow: 3px 3px 4px 1px #2c1c04;
+  border: #2c1c04 solid 1px;
 }
 
 .menu1,
@@ -67,20 +78,30 @@ i#burguer {
 
 .cabecalho .a {
   text-decoration: none;
-  color: #2c1c04;
-  font-size: 1.5rem;
+  color: #d4ccb4;
+  font-size: 1rem;
   white-space: nowrap;
+  padding: 3% 5%;
 }
 
-
+.cabecalho .a:hover{
+  color: #a47c4c;
+}
 
 .perfil {
   margin: auto;
+  
 }
 
 .iconperfil {
-  width: 5rem;
+  width: 3rem;
+  margin-right: 20px;
 }
+
+.iconperfil:hover{
+  content: url(../img/perfil_hover.png);
+}
+
 
 .open-login-cadastro{
   display: none;
@@ -238,7 +259,9 @@ margin: auto;
 
 .decorados img{
   width: 98%;
+  
 }
+
 
 /* Avaliação Clientes */
 
@@ -556,10 +579,7 @@ address {
 @media only screen and (max-width: 1000px) {
 
 
-  header {
-    width: 100%;
-    display: flex;
-  }
+  
 
   /* Menu-Mobile */
   .container {
@@ -569,6 +589,10 @@ address {
     width: 100%;
     height: 5rem;
     padding: 1%;
+    box-shadow: 1px 1px 10px 1px #2c1c04;
+    background-color: #a37c4c;
+    
+    
   }
 
   .imglogoheader{
