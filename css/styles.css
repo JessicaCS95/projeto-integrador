@@ -23,7 +23,7 @@ header {
   left: 0;
   width: 100%;
   background-color:#d4ccb4;
-  padding: 0.3rem 0 3rem 0;
+  padding: 1rem 0 3rem 0;
   display: flex;
   flex-direction: row;
   
@@ -46,7 +46,8 @@ i#burguer {
   align-items: center;
   margin: auto;
   box-shadow: 1px 1px 5px 1px #2c1c04 ;
-  padding: 0 0 0 10rem;
+  padding: 0 0 0 14rem;
+  width: 100%;
 }
 
 .logoheader {
@@ -54,16 +55,14 @@ i#burguer {
   margin: 1%;
 }
 
-
-
 .imglogoheader {
   display: flex;
   position: absolute;
   margin: auto;
   width: 12rem;
   height: 6rem;
-  box-shadow: 3px 3px 4px 1px #2c1c04;
-  border: #2c1c04 solid 1px;
+  box-shadow: 3px 3px 3px 1px #2c1c04;
+  border: #2c1c04 solid 0.5px;
 }
 
 .menu1,
@@ -227,26 +226,39 @@ margin: auto;
   width: 100%;
 }
 
-.faixinhaEntrega2{
-  display: flex;
-  margin: auto;
-  padding: 2%;
-}
-
-.faixinhaentrega1{
-  padding: 0 1%;
-}
-
-.pfaixinha2{
+.frete-faixa {
   color: #a47c4c;
-  font-size: 1.8rem;
+  text-align: center;
+  padding: 3%;
+  position: relative;
+  width: 100%;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  justify-content:left;
+  align-items:center;
+  animation: mover 8s linear infinite;
+  
+}
+
+.caminhao {
+  width: 2.5rem;
+  margin-right: 0.625rem;
+}
+
+@keyframes mover {
+ 
+  100% { transform: translateX(93.75rem); }
+}
+
+.frete-faixa span {
   font-weight: bold;
-  padding: 0 2%;
+  margin-right: 0.625rem;
   white-space: nowrap;
 }
-
-
-
 
 
 /* Decorados */
@@ -476,6 +488,68 @@ fieldset {
   font-weight: bold;
   text-align: center  ;
   cursor: pointer;
+}
+
+/* Main */
+main {
+  font-family: "Open Sans";
+  color: #a37c4c;
+  font-size: 1.25rem;
+  padding: 1rem;
+  max-width: 37.5rem;
+  margin: auto;
+}
+
+/* Blog */
+
+.blog {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.blog h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #060606;
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3ebd3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px rgba(5, 5, 5, 5.1);
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.blog-post img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.blog-post p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.text-box {
+  display: none;
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.text-box p {
+  font-size: 16px;
+  color: #181717;
 }
 
 /* Footer */
@@ -719,14 +793,17 @@ address {
 
   /* Faixinha entrega */
 
- .pfaixinha2{
-  margin-top: 1%;
+ .frete-faixa {
   font-size: 1rem;
- }
-
+}
   .caminhao{
     width: 2rem;
     height: 2rem;
+  }
+
+  @keyframes mover {
+ 
+    100% { transform: translateX(40rem); }
   }
 
 
@@ -754,18 +831,22 @@ address {
   }
 
   .clientes{
-    margin: 5% 0;
+    margin: 10% 0;
     font-size: 1.3rem;
   }
 
   #carouselExampleSlidesOnly{
     display: block;
-    margin-bottom: 20%;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 3rem;
   }
 
   .avaliacoes{
     display: none;
   }
+
+ 
 
   /* Quem Somos */
   
