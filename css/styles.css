@@ -388,6 +388,8 @@ main {
 font-size: 1.8rem;
 margin: auto;
 font-family: "Montserrat", "Courier New", Courier, monospace;
+padding: 1%;
+white-space: nowrap;
 }
 
 
