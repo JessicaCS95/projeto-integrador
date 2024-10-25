@@ -183,6 +183,34 @@ main {
 
 /* Home */
 
+/* Banner */
+
+.carousel-caption {
+  position: absolute;
+  display: flex;
+}
+
+
+
+.btnorcamento{
+  display: flex;
+  z-index: 50;
+  padding: 0.8%;
+  border-radius: 13px;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", "Courier New", Courier, monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color:#d4ccb4;
+  color:#2c1c04;
+}
+
+.btnorcamento:hover{
+  background-color: #a47c4c;
+  color: #d4ccb4;
+}
+
 .corfundo{
   background-color: #d4ccb4;
   margin: 0;
@@ -200,14 +228,16 @@ main {
 
 .listafaixinha{
   display: flex;
+  justify-content:space-around;
+  align-items: center;
   width: 100%;
   padding: 1%; 
   
 }
 
-.iconesf{
-display:flex;
-margin: auto;
+.estrela{
+  width: 2rem;
+  height: 2rem;
 }
 
 .pfaixinha{
@@ -215,7 +245,7 @@ margin: auto;
   font-size: 1.2rem;
   font-weight: bold;
   white-space: nowrap;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 /* Faixinha entrega */
@@ -240,18 +270,18 @@ margin: auto;
   display: flex;
   justify-content:left;
   align-items:center;
-  animation: mover 8s linear infinite;
+  animation: mover 12s linear infinite;
   
+}
+
+@keyframes mover {
+  0% { transform: translateX(-50rem); }
+  100% { transform: translateX(93.75rem); }
 }
 
 .caminhao {
   width: 2.5rem;
   margin-right: 0.625rem;
-}
-
-@keyframes mover {
- 
-  100% { transform: translateX(93.75rem); }
 }
 
 .frete-faixa span {
@@ -269,10 +299,21 @@ margin: auto;
   background-color:#d4ccb4;
 }
 
-.decorados img{
-  width: 98%;
-  
+.decor1{
+  background-image:url(../img/decor1.png) ;
+  width: 100%;
 }
+.decor2{
+  background-image:url(../img/decor2.png) ;
+  width: 100%;
+
+}
+.decor3{
+  background-image:url(../img/decor3.png) ;
+  width: 100%;
+}
+
+
 
 
 /* Avaliação Clientes */
@@ -773,22 +814,23 @@ address {
   /* Faixinha */
 
   .listafaixinha{
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
     background-color: #f3ecd4;
     padding: 1%; 
   }
 
-  .iconesf img{
-    width: 2rem;
-    height: 2rem;
+  .estrela{
+    display: none;
   }
+  
   .pfaixinha{
     color: #2c1c04;
     font-size: 1rem;
     font-weight: bold;
     white-space: nowrap;
+    background-color: #a37c4c;
+    padding: 1%;
   }
 
   /* Faixinha entrega */
@@ -801,8 +843,16 @@ address {
     height: 2rem;
   }
 
+  .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    animation: mover 12s linear infinite;
+  }
+
   @keyframes mover {
- 
+
+    0% { transform: translateX(-25rem); }
     100% { transform: translateX(40rem); }
   }
 
@@ -827,6 +877,7 @@ address {
   /* Avaliação Clientes */
 
   .avaliacaoClientes{
+    width: 100%;
     padding: 5% 0 ;
   }
 
@@ -838,9 +889,11 @@ address {
   #carouselExampleSlidesOnly{
     display: block;
     margin: auto;
-    width: 80%;
     margin-bottom: 3rem;
+    width: 80%;
   }
+
+  
 
   .avaliacoes{
     display: none;
