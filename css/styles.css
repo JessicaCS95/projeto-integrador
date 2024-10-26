@@ -978,8 +978,6 @@ address {
     width: 80%;
   }
 
-  
-
   .avaliacoes{
     display: none;
   }
@@ -995,6 +993,12 @@ address {
     width: 50%;
   }
 
+}
+
+@media screen and (max-width: 1000px){
+  .menu-mobile{
+    top: 9%;
+  }
 }
 
 
