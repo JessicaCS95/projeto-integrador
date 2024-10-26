@@ -944,7 +944,6 @@ address {
   .flip-card-front img {
     width: 28rem;
     height: 15.75rem;
-    padding: 0;
     
   }
 
@@ -952,7 +951,6 @@ address {
     width: 31rem;
     width: 28rem;
     height: 15.75rem;
-    margin: 2%;
   }
   
   .flip-card-back h1{
@@ -998,11 +996,6 @@ address {
 @media screen and (max-width: 1000px){
   .menu-mobile{
     top: 7%;
-  }
-
-  .maindecorados{
-    padding: 2%;
-    background-color: #d4ccb4;
   }
 }
 
