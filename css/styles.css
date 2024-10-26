@@ -1000,8 +1000,9 @@ address {
     top: 7%;
   }
 
-  .flip-card-front img {
-    padding: 0;
+  .maindecorados{
+    padding: 2%;
+    background-color: #d4ccb4;
   }
 }
 
