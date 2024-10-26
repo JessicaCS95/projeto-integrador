@@ -945,12 +945,14 @@ address {
     width: 28rem;
     height: 15.75rem;
     padding: 0;
+    
   }
 
   .flip-card {
     width: 31rem;
     width: 28rem;
     height: 15.75rem;
+    margin: 2%;
   }
   
   .flip-card-back h1{
