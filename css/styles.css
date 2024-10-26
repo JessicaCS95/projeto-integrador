@@ -937,6 +937,10 @@ address {
 
   /* Decorados */
 
+  .decorados{
+    overflow: hidden;
+  }
+
   .flip-card-front img {
     width: 28rem;
     height: 15.75rem;
@@ -948,8 +952,6 @@ address {
     height: 15.75rem;
   }
   
-  
-
   .flip-card-back h1{
     font-size: 1.2rem;
     }
