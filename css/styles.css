@@ -997,7 +997,11 @@ address {
 
 @media screen and (max-width: 1000px){
   .menu-mobile{
-    top: 0;
+    top: 7%;
+  }
+
+  .flip-card-front img {
+    padding: 0;
   }
 }
 
