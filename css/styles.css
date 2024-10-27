@@ -561,9 +561,11 @@ main {
 }
 
 .blog h2 {
+  font-family: "Montserrat";
+  font-weight: bold;
   font-size: 36px;
   margin-bottom: 30px;
-  color: #060606;
+  color: #2c1c04;
 }
 
 .blog-post {
@@ -588,13 +590,14 @@ main {
 }
 
 .blog-post p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .text-box {
   display: none;
-  background-color: #f1f1f1;
+  background-color:#a47c4c;
+  text-align: justify;
   padding: 10px;
   margin-top: 10px;
   border-radius: 8px;
@@ -602,7 +605,7 @@ main {
 
 .text-box p {
   font-size: 16px;
-  color: #181717;
+  color: #2c1c04;
 }
 
 /* Footer */
@@ -648,8 +651,6 @@ main {
 .mailto:hover {
   text-decoration: underline;
 }
-
-
 
 .contatos,
 .endereco {
