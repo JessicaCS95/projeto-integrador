@@ -6,12 +6,15 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
 }
 
-body {
+body{
   margin: 0;
   padding: 0;
+  background-color: #d4ccb4;
+}
+
+.body{
   background-color: #d4ccb4;
 }
 
@@ -39,6 +42,7 @@ i#burguer {
 }
 
 .cabecalho {
+  display: flex;
   background-color:#2c1c04;
   display: flex;
   flex-direction: row;
@@ -171,7 +175,7 @@ i#burguer {
 
 /* Main  */
 
-main {
+.principal-cadastro, .principal-login {
   font-family: "Open Sans";
   color: #a37c4c;
   font-size: 1.25rem;
@@ -465,7 +469,7 @@ form {
   width: 100%;
 }
 
-fieldset {
+.fieldset2 {
   display: flex;
   border-top: 0.125rem solid #636363;
   border-bottom: none;
@@ -476,6 +480,7 @@ fieldset {
   justify-content: center;
   color: #636363;
   margin: auto;
+  
 }
 
 .fim {
@@ -608,6 +613,101 @@ main {
   color: #2c1c04;
 }
 
+/* Portfolio */
+
+.title-portfolio{
+  text-align: center;
+  margin: 3rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #2c1c04;
+}
+
+.portfolio{
+  margin-bottom: 8rem;
+}
+
+/* Orçamento */
+
+.pag-orcamento{
+  width: 100%;
+  background-color:#fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.fundo-orcamento{
+  display: flex;
+  width: 50%;
+  height: 37.5rem;
+}
+
+
+.title-orcamento{
+  display: block;
+  position: absolute;
+  text-wrap: wrap;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #2c1c04;
+  width: 50%;
+  height: 40%;
+  padding: 10% 2%;
+  overflow: wrap;
+ 
+}
+
+.form-orcamento{
+  width: 50%;
+  height: 37.5rem;
+  margin: 1%;
+  border: #d4ccb4 3px solid;
+  border-radius: 15px;
+  
+}
+
+.orcamento{
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2c1c04;
+  text-align: center;
+  padding: 1%;
+}
+
+.labelOrcamento{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color:#2c1c04;
+}
+
+.dadosOrcamento{
+  width: 95%;
+  padding: 0.5%;
+  border: 2px solid #d4ccb4;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#solicitarOrcamento{
+  font-family: "Montserrat";
+  font-weight: bold;
+  color:#2c1c04;
+  padding: 1%;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color:#d4ccb4;
+  
+
+}
+
 /* Footer */
 .fundo {
   display: flex;
@@ -700,6 +800,13 @@ address {
   
 
 @media screen and (max-width: 1500px) {
+
+  /* Orcamento */
+
+  .pag-orcamento{
+    
+    flex-direction: column;
+  }
  
   /* Decorados */
 
