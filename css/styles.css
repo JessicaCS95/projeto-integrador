@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", "Courier New", Courier, monospace;
   box-sizing: border-box;
   text-decoration: none;
 }
@@ -160,22 +161,22 @@ i#burguer {
   align-items: center;
 }
 
-.textoh1 {
-  color: #888168;
-  font-family: "Montserrat";
-  font-weight: bold;
+.fundomadeira .textoh1 {
+  color:#d4ccb4;
+  font-weight: 900;
   width: 100%;
   text-align: end;
 }
 
 .textoh1 h1 {
+  font-family: "Montserrat";
   margin: 0;
   padding: 2%;
 }
 
 /* Main  */
 
-.principal-cadastro, .principal-login {
+main{
   font-family: "Open Sans";
   color: #a37c4c;
   font-size: 1.25rem;
@@ -202,9 +203,6 @@ i#burguer {
   border-radius: 13px;
   border: none;
   cursor: pointer;
-  font-family: "Montserrat", "Courier New", Courier, monospace;
-  font-size: 1rem;
-  font-weight: bold;
   background-color:#d4ccb4;
   color:#2c1c04;
 }
@@ -214,13 +212,19 @@ i#burguer {
   color: #d4ccb4;
 }
 
+.btnorcamento .linkbtn{
+  text-decoration: none;
+  font-family: "Montserrat", "Courier New", Courier, monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  color:#2c1c04;
+}
+
 .corfundo{
   background-color: #d4ccb4;
   margin: 0;
   
 }
-
-
 
 .faixinhaEntrega{
   display: flex;
@@ -483,6 +487,7 @@ form {
   
 }
 
+
 .fim {
   display: flex;
   justify-content: center;
@@ -497,12 +502,7 @@ form {
 }
 
 /* Main Login */
-.textoh2 {
-  text-align: center;
-  color: #888168;
-  font-family: "Montserrat";
-  margin-top: 2rem;
-}
+
 
 .rec-senha {
   color: #a47c4c;
@@ -924,8 +924,12 @@ address {
 
 
   /* Banner Carrossel */
-  .btnorcamento{
+
+  .btnorcamento .linkbtn{
     font-size: 0.8rem;
+  }
+
+  .btnorcamento{
     padding: 1%;
   }
 
