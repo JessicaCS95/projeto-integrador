@@ -468,25 +468,20 @@ form {
   cursor: pointer;
 }
 
-.fieldset {
+.fieldset1 {
   margin-top: 2%;
   width: 100%;
 }
 
-.fieldset2 {
+
+.fieldset2{
   display: flex;
   border-top: 0.125rem solid #636363;
   border-bottom: none;
   border-left: none;
-  border-right: none;
-  display: block;
-  text-align: center;
-  justify-content: center;
-  color: #636363;
-  margin: auto;
-  
+  border-right: none;  
+  margin: 2rem 0;
 }
-
 
 .fim {
   display: flex;
@@ -642,6 +637,7 @@ main {
   display: flex;
   width: 50%;
   height: 37.5rem;
+  
 }
 
 
@@ -663,11 +659,16 @@ main {
 .form-orcamento{
   width: 50%;
   height: 37.5rem;
-  margin: 1%;
   border: #d4ccb4 3px solid;
   border-radius: 15px;
+
   
 }
+
+.formtest{
+  margin: 10px;
+}
+
 
 .orcamento{
   font-family: "Montserrat";
