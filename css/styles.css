@@ -327,6 +327,10 @@ main{
   background-color:#d4ccb4;
 }
 
+.mensagemMobile{
+  display: none;
+}
+
 .flip-card {
   background-color: transparent;
   width: 50%;
@@ -1158,8 +1162,20 @@ address {
 
   /* Decorados */
 
-  .decorados{
-    overflow: hidden;
+  .flip-card:hover .flip-card-inner {
+    transform: none;
+  }
+
+  .mensagemMobile{
+    display: flex;
+    width: 100%;
+  }
+
+  .h1mensagemMobile{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2c1c04;
+    margin: auto;
   }
 
   .flip-card-front img {
@@ -1217,12 +1233,6 @@ address {
 
 }
 
-@media screen and (max-width: 1000px){
-  .menu-mobile{
-    top: 7%;
-  }
 
-  
-}
 
 
