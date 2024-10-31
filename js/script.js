@@ -103,6 +103,14 @@ function toggleText(id) {
     }
 }
 
+function toggleOpen(id){
+    var openPerfil = document.getElementById(id);
+    if (openPerfil.style.display === "none" || openPerfil.style.display === "") {
+        openPerfil.style.display = "block"
+        } else {
+        openPerfil.style.display = "none";
+    }
 
+}
 
 

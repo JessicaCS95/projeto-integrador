@@ -38,7 +38,12 @@
             <div class="menu5"><a class="a" href="blog.html">Blog</a></div>
 
             
-            <div class="perfil"><a href="#"><img src="./img/perfil.png" class="iconperfil"></a></div>
+            <div class="perfil" id="perfil" onclick="toggleOpen('openPerfil')"><img src="./img/perfil.png" class="iconperfil">
+                <div class="openPerfil" id="openPerfil">
+                <div><a class="navlogin" href="login.html">Login</a></div>
+                <div><a class="navcadastro" href="cadastro.html">Cadastro</a></div>
+                </div>
+            </div>
         </nav>
 
         
@@ -78,26 +83,23 @@
         <div class="form-orcamento">
 
             <h1 class="orcamento">Orçamento</h1>
-            <form class="formtest" action="#" method="post">
-                <label class="labelOrcamento" for=" nomeOrcamento">Nome:</label>
-                <input type="text" name="nomeOrcamento" class="dadosOrcamento">
-
-                <label class="labelOrcamento" for=" emailOrcamento">Email:</label>
-                <input type="text" name="emailOrcamento" class="dadosOrcamento">
-
-                <label class="labelOrcamento" for=" celularOrcamento">Celular:</label>
-                <input type="number" name="celularOrcamento" class="dadosOrcamento">
+            <div class="divform">
+                <form class="form" action="#" method="post">
+                    <label class="labelOrcamento" for=" nomeOrcamento">Nome:</label>
+                    <input type="text" name="nomeOrcamento" class="dadosOrcamento">
+                    <label class="labelOrcamento" for=" emailOrcamento">E-mail:</label>
+                    <input type="text" name="emailOrcamento" class="dadosOrcamento">
+                    <label class="labelOrcamento" for=" celularOrcamento">Celular:</label>
+                    <input type="number" name="celularOrcamento" class="dadosOrcamento">
                 
-                <label class="labelOrcamento" for=" mensagemOrcamento">Detalhe o que você precisa:</label>
+                    <label class="labelOrcamento" for=" mensagemOrcamento">Detalhe o que você precisa:</label>
                 
-                <textarea type="text" name="mensagemOrcamento" class="dadosOrcamento"></textarea>
-
-                <input type="file" value="Arquivos">
-                <p>*Aqui você pode anexar a planta ou outros documentos.</p>
-
-                <input type="submit" value="SOLICITAR ORÇAMENTO" id="solicitarOrcamento">
-    
-            </form>
+                    <textarea type="text" name="mensagemOrcamento" class="dadosOrcamento"></textarea>
+                    <input type="file" value="Arquivos">
+                    <p>*Aqui você pode anexar a planta ou outros documentos.</p>
+                    <input type="submit" value="SOLICITAR ORÇAMENTO" id="solicitarOrcamento" class="solicitarOrcamento">
+                </form>
+            </div>
 
         </div>
 
