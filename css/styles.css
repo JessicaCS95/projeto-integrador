@@ -194,12 +194,6 @@ i#burguer {
 }
 
 
-
-
-
-
-
-
 /* Fundo amadeirado */
 
 .fundomadeira {
@@ -1111,6 +1105,10 @@ address {
 
 @media only screen and (max-width: 768px) {
 
+  .menu-mobile{
+    top: 4rem;
+  }
+
   /* Banner Carrossel */
 
   .btnorcamento{
@@ -1232,6 +1230,25 @@ address {
 
   /* Orçamento */
 
+  .divform{
+    padding: 1rem;
+    max-width: 37.5rem;
+    margin: auto;
+    width: 100%;
+  }
+
+  .form{
+    padding: 1rem;
+    max-width: 37.5rem;
+    margin: auto;
+    width: 100%;
+  }
+
+  .responsividadeform{
+    width: 100%;
+    font-size: 0.6rem;
+
+  }
 }
 
 
