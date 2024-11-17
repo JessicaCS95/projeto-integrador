@@ -34,17 +34,10 @@
         <!-- Menu Principal -->
 
         <nav id="menu" class="cabecalho">
-            <div class="menu1">
-                <a class="a" href="quemsomos.html">Quem Somos</a>
-            </div>
-            <div class="menu2"><a class="a" href="#">Catálogo</a></div>
-            <div class="menu3">
-                <a class="a" href="portfolio.html">Portfólio</a>
-            </div>
-            <div class="menu4">
-                <a class="a" href="orcamento.html">Orçamento</a>
-            </div>
-            <div class="menu5"><a class="a" href="blog.html">Blog</a></div>
+            <div class="menu1"><a class="a" href="quemsomos.html">Quem Somos</a></div>
+            <div class="menu2"><a class="a" href="portfolio.html">Portfólio</a></div>
+            <div class="menu3"><a class="a" href="orcamento.html">Orçamento</a></div>
+            <div class="menu4"><a class="a" href="blog.html">Blog</a></div>
 
             <div class="perfil" id="perfil" onclick="toggleOpen('openPerfil')">
                 <img src="./img/perfil.png" class="iconperfil" />
@@ -72,26 +65,31 @@
                     <a href="cadastro.html"> / CADASTRO</a>
                 </li>
                 <li class="nav-item"><a href="quemsomos.html">QUEM SOMOS</a></li>
-                <li class="nav-item"><a href="#">CATÁLOGO</a></li>
                 <li class="nav-item"><a href="portfolio.html">PORTFÓLIO</a></li>
                 <li class="nav-item"><a href="orcamento.html">ORÇAMENTO</a></li>
                 <li class="nav-item"><a href="blog.html">BLOG</a></li>
             </ul>
         </div>
     </header>
+    <div class="fundomadeira">
+        <div class="textoh1">
+            <h1>Quem Somos</h1>
+        </div>
+    </div>
+    <article>
+        <div class="videobanner"><video autoplay loop muted playsinline>
+            <source class="videobannercontent" src="video/Banner Ribeiro 1.mp4" type="video/mp4">
+        </video></div>
+    </article>
 
     <main>
         <article>
             <div class="container-quemsomos">
-                <div class="fundomadeira">
-                    <div class="textoh1">
-                        <h1>Quem Somos</h1>
-                    </div>
-                </div>
+                
             </div>
 
             <div class="portfolio-quemsomos">
-                <img src="./img/Design sem nome (1).png" />
+                <img src="img/img-quemsomos.png" />
                 <div class="texto-quem-somos">
                     <p>
                         A <strong>Ribeiro Planejados</strong> nasceu do talento de José
@@ -114,7 +112,7 @@
             <div class="container-quemsomos">
                 <div class="logo-quemsomos">
                     <figcaption>Missão</figcaption>
-                    <img src="./img/Logo-quem_somos_02-removebg-preview.png" alt="" />
+                    <figure class="fig-quemsomos"><img src="img/missao.png" alt="logo missão" /></figure>
                     <p>
                         Oferecer móveis planejados de alta qualidade, personalizados para
                         cada cliente, combinando funcionalidade e design para transformar
@@ -122,8 +120,8 @@
                     </p>
                 </div>
                 <div class="logo-quemsomos">
-                    <figcaption>Missão</figcaption>
-                    <img src="./img/Logo-quem_somos_03-removebg-preview.png" alt="" />
+                    <figcaption>Visão</figcaption>
+                    <figure class="fig-quemsomos"><img src="img/visao.png" alt="Logo Visão" /></figure>
                     <p>
                         Ser referência no mercado de móveis planejados, reconhecida pela
                         excelência no atendimento e pela inovação em design e
@@ -131,14 +129,14 @@
                     </p>
                 </div>
                 <div class="logo-quemsomos">
-                    <figcaption>Missão</figcaption>
-                    <img src="./img/Logo-quem_somos_01-removebg-preview.png" alt="" />
+                    <figcaption>Valores</figcaption>
+                    <figure class="fig-quemsomos"><img src="img/valores.png" alt="logo valores" /></figure>
                     <ul>
-                        <li>Dedicação ao cliente</li>
-                        <li>Qualidade e precisão</li>
-                        <li>Criatividade e inovação</li>
-                        <li>Sustentabilidade</li>
-                        <li>Ética e respeito</li>
+                        <li class="li-valores">Dedicação ao cliente</li>
+                        <li class="li-valores">Qualidade e precisão</li>
+                        <li class="li-valores">Criatividade e inovação</li>
+                        <li class="li-valores">Sustentabilidade</li>
+                        <li class="li-valores">Ética e respeito</li>
                     </ul>
                 </div>
             </div>

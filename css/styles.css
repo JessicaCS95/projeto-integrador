@@ -71,8 +71,7 @@ i#burguer {
 .menu1,
 .menu2,
 .menu3,
-.menu4,
-.menu5 {
+.menu4{
   flex: 1;
   padding: 1%;
   text-align: center;
@@ -81,7 +80,7 @@ i#burguer {
 .cabecalho .a {
   text-decoration: none;
   color: #d4ccb4;
-  font-size: 1rem;
+  font-size: 1.3rem;
   white-space: nowrap;
   padding: 3% 5%;
 }
@@ -406,6 +405,7 @@ i#burguer {
 }
 
 /* Quem Somos */
+
 .texto-quem-somos {
   position: absolute;
   top: 50%;
@@ -436,6 +436,8 @@ i#burguer {
   overflow: hidden;
 }
 
+
+
 .portfolio-quemsomos img {
   width: 100%;
   height: 100%;
@@ -456,7 +458,6 @@ i#burguer {
   align-items: center;
   text-align: center;
   gap: 1.5rem;
-
   padding: 2rem;
   border-radius: 1rem;
   flex: 1;
@@ -464,26 +465,52 @@ i#burguer {
 }
 
 .logo-quemsomos figcaption {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: #2c1c04;
   margin: 0;
 }
 
 .logo-quemsomos img {
-  width: 10vw;
-  height: 10vh;
+  width: 6vw;
+  height: 11vh;
   max-width: 25rem;
   border-radius: 8px;
 }
 
-.logo-quemsomos p,
-li {
-  font-size: 1rem;
+.logo-quemsomos p, .li-valores{
+  font-size: 1.5rem;
   line-height: 1.5;
   margin: 0;
   padding: 0 1rem;
-  color: #805f36;
-  font-weight: 400;
+  color:#2c1c04;
+  font-weight: bold;
+  text-align:left;
+}
+
+.container-quemsomos {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem em novas linhas em telas menores */
+  justify-content: space-around; /* Distribui espaço entre os itens */
+  gap: 1rem; /* Espaço entre os itens */
+}
+
+/* Vídeo */
+
+.videobanner {
+  margin-top: 3rem;
+  /* Altura fixa removida */
+  width: 100%; /* Mantenha isso */
+  background-color: #ccc;
+  overflow: hidden;
+  min-width: 300px; /* Adicione largura mínima */
+  max-width: 100%; /* Adicione largura máxima */
+}
+
+.videobanner video { /* Estilize o elemento de vídeo diretamente */
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Isso é crucial */
 }
 
 /* Cadastro */
@@ -907,16 +934,6 @@ address {
   box-shadow: 0.125rem 0.125rem 1.25rem #5fe690;
 }
 
-/* video */
-
-.videobanner{
- 
-  background-color: #ccc;
-  overflow: hidden;
-
-}
-
-/* Quem Somos */
 
 @media screen and (max-width: 1500px) {
   /* Orcamento */
@@ -964,6 +981,12 @@ address {
 
   .local {
     font-size: 0.9rem;
+  }
+
+  /* Quem Somos */
+
+  .texto-quem-somos{
+    font-size: 1.2rem;
   }
 }
 
@@ -1145,6 +1168,8 @@ address {
 }
 
 @media only screen and (max-width: 768px) {
+
+  
   .menu-mobile {
     top: 3.5rem;
   }
@@ -1256,7 +1281,24 @@ address {
     display: none;
   }
 
-  /* Quem Somos */
+   /* Quem Somos */
+
+   .texto-quem-somos{
+    font-size: 0.9rem;
+  }
+
+  .logo-quemsomos img {
+    width: 10vw;
+    height: 8vh;
+  }
+
+  .logo-quemsomos figcaption {
+    font-size: 1.3rem;
+  }
+
+  .logo-quemsomos p, .li-valores{
+    font-size: 1rem;
+  }
 
   /* Footer */
 
