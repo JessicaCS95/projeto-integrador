@@ -499,18 +499,16 @@ i#burguer {
 
 .videobanner {
   margin-top: 3rem;
-  /* Altura fixa removida */
-  width: 100%; /* Mantenha isso */
+  width: 100%; 
   background-color: #ccc;
   overflow: hidden;
-  min-width: 300px; /* Adicione largura mínima */
-  max-width: 100%; /* Adicione largura máxima */
+  min-width: 300px; 
+  max-width: 100%;
 }
 
-.videobanner video { /* Estilize o elemento de vídeo diretamente */
+.videobanner video { 
   width: 100%;
-  height: auto;
-  object-fit: cover; /* Isso é crucial */
+  object-fit: cover; 
 }
 
 /* Cadastro */
@@ -1284,23 +1282,25 @@ address {
    /* Quem Somos */
 
    .texto-quem-somos{
-    font-size: 0.9rem;
-    padding: 0.5rem;
+    font-size: 1rem;
+    padding: 0;
     width: 85%;
   }
 
   .logo-quemsomos img {
-    width: 10vw;
-    height: 8vh;
+    width: 15vw;
+    height: 12vh;
   }
 
   .logo-quemsomos figcaption {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
 
   .logo-quemsomos p, .li-valores{
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
+
+ 
 
   /* Footer */
 
