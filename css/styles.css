@@ -1285,6 +1285,8 @@ address {
 
    .texto-quem-somos{
     font-size: 0.9rem;
+    padding: 0.5rem;
+    width: 85%;
   }
 
   .logo-quemsomos img {
