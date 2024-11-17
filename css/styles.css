@@ -224,9 +224,7 @@ i#burguer {
   width: 100%;
 }
 
-/* Home */
-
-/* Banner */
+/* Home Banner */
 
 .carousel-caption {
   position: absolute;
@@ -680,8 +678,6 @@ form {
   cursor: pointer;
 }
 
-/* Main */
-
 /* Blog */
 
 .blog {
@@ -930,6 +926,44 @@ address {
   color: #029e3b;
   font-weight: 900;
   box-shadow: 0.125rem 0.125rem 1.25rem #5fe690;
+}
+
+/* tela de redefinir senha */
+.tamanho {
+  font-weight: bold;
+}
+
+.enviar {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  background-color: #a4764c;
+  color: black;
+  border: 2px solid black;
+  margin-left: 0.2%;
+  margin-bottom: 50%;
+}
+
+.paragrafo {
+  font-size: 86%;
+  font-weight: 420;
+  margin-top: 20%;
+}
+
+.email-login3 {
+  font-size: 450;
+}
+
+/* Redefinir senha */
+.titulo-redefinir {
+  line-height: 1rem;
+  font-weight: bold;
+}
+
+div .logar-redefinir {
+  margin: 0 30rem 10rem 0;
+  color: black;
+  border-color: black;
 }
 
 
