@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <!-- eye-senha -->
     <script src="js/script.js" defer></script>
+    <!-- Animação AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <title>Ribeiro Planejados</title>
 </head>
 
@@ -84,11 +86,7 @@
 
     <main>
         <article>
-            <div class="container-quemsomos">
-                
-            </div>
-
-            <div class="portfolio-quemsomos">
+            <div data-aos="fade-up" class="portfolio-quemsomos">
                 <img src="img/img-quemsomos.png" />
                 <div class="texto-quem-somos">
                     <p>
@@ -110,7 +108,7 @@
             </div>
 
             <div class="container-quemsomos">
-                <div class="logo-quemsomos">
+                <div data-aos="fade-right" class="logo-quemsomos">
                     <figcaption>Missão</figcaption>
                     <figure class="fig-quemsomos"><img src="img/missao.png" alt="logo missão" /></figure>
                     <p>
@@ -119,7 +117,7 @@
                         ambientes com peças exclusivas.
                     </p>
                 </div>
-                <div class="logo-quemsomos">
+                <div data-aos="fade-up" class="logo-quemsomos">
                     <figcaption>Visão</figcaption>
                     <figure class="fig-quemsomos"><img src="img/visao.png" alt="Logo Visão" /></figure>
                     <p>
@@ -128,7 +126,7 @@
                         funcionalidade, expandindo nossa presença em todo o Brasil.
                     </p>
                 </div>
-                <div class="logo-quemsomos">
+                <div data-aos="fade-left" class="logo-quemsomos">
                     <figcaption>Valores</figcaption>
                     <figure class="fig-quemsomos"><img src="img/valores.png" alt="logo valores" /></figure>
                     <ul>
@@ -181,5 +179,10 @@
             </div>
         </div>
     </footer>
+    <!-- Animação AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

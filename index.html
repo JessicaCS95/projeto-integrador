@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- eye-senha -->
   <script src="js/script.js" defer></script>
+  <!-- Animação AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
   <title>Ribeiro Planejados</title>
 </head>
 
@@ -119,8 +122,8 @@
       </div>
     </div>
     <!-- Decorados -->
-    <div class="decorados">
-      <div class="flip-card">
+    <div  class="decorados">
+      <div data-aos="fade-up" class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="img/decor1.png" alt="DECORAÇÃO 1">
@@ -133,7 +136,7 @@
       <div class="mensagemMobile">
         <h1 class="h1mensagemMobile">✦ 3 ANOS DE GARANTIA ✦</h1>
       </div>
-      <div class="flip-card">
+      <div data-aos="fade-up" class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="img/decor2.png" alt="DECORAÇÃO 2">
@@ -146,7 +149,7 @@
       <div class="mensagemMobile">
         <h1 class="h1mensagemMobile">✦ PARCELAMENTO EM ATÉ 12X ✦</h1>
       </div>
-      <div class="flip-card">
+      <div data-aos="fade-up" class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="img/decor3.png" alt="DECORAÇÃO 3">
@@ -162,14 +165,14 @@
     </div>
     <!-- Avaliações Clientes -->
     <div class="avaliacaoClientes">
-      <p class="clientes">NOSSOS CLIENTES RECOMENDAM ⭐️</p>
-      <div class="avaliacoes">
+      <p data-aos="fade-up" class="clientes">NOSSOS CLIENTES RECOMENDAM ⭐️</p>
+      <div data-aos="fade-up" class="avaliacoes">
         <figure><img class="av1" src="img/avaliacao01.png" alt="avaliação cliente 1"></figure>
         <figure><img class="av2" src="img/avaliacao02.png" alt="avaliação cliente 2"></figure>
         <figure><img class="av3" src="img/avaliacao03.png" alt="avaliação cliente 3"></figure>
       </div>
 
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div data-aos="fade-up" id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="img/avaliacao01.png">
@@ -234,6 +237,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
