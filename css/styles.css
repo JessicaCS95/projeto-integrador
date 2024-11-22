@@ -648,6 +648,10 @@ form {
   text-decoration: underline;
 }
 
+.rec-senha:hover{
+  color: #a47c4c;
+}
+
 .login {
   display: flex;
   justify-content: center;
@@ -969,6 +973,7 @@ body .geral-redefinir {
 
 .enviar {
   display: flex;
+  font-size: 1rem;
   justify-content: center;
   width: 25%;
   border: 1px solid #ccc;
@@ -999,6 +1004,8 @@ body .geral-redefinir {
 
 div .logar-redefinir {
   margin: 0 30rem 10rem 0;
+  color: black;
+  border-color: black;
 }
 
 /* tela de check */
