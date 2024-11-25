@@ -683,6 +683,10 @@ form {
   margin-left: 25%;
 }
 
+.logogoogle:hover{
+  text-decoration: none;
+}
+
 .cadastre-se {
   margin-bottom: 30%;
   width: 100%;
