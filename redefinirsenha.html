@@ -123,12 +123,12 @@
             <form action="#" method="post">
               <div class="email-login">
                 <div class="email-login2">
-                  <label for="email-Login">E-mail, CPF OU CNPJ:</label>
+                  <label for="email-Login">E-mail de Cadastro:</label>
                   <input
                     type="email"
-                    name="email-login"
+                    name="emailrecsenha"
                     class="email-login3"
-                    id="email-login"
+                    id="emailrecsenha"
                   />
                 </div>
 
@@ -136,8 +136,7 @@
                   type="submit"
                   value="ENVIAR"
                   class="enviar"
-                  id="botaoLogin"
-                  onclick="logar()"
+                  id="buttonrecsenha"
                 />
               </div>
             </form>
@@ -146,52 +145,41 @@
       </section>
     </main>
 
-    <footer>
-      <div class="fundo">
-        <div class="logofooter">
-          <img
-            src="img/logo_footer.png"
-            alt="Logo na horizontal"
-            width="100%"
-          />
-        </div>
+<!-- Footer -->
+<footer>
+  <div class="fundo">
+    <div class="logofooter">
+      <img src="img/logo_footer.png" alt="Logo na horizontal" width="100%">
+    </div>
 
-        <div>
-          <p class="contatos">CONTATOS</p>
-          <div>
-            <p class="email">
-              <img src="img/email.png" alt="Ícone e-mail" class="icone" />
-              <a href="mailto:marcenariazequinha@yahoo.com.br" class="mailto"
-                >ribeiroplanejados@gmail.com.br</a
-              >
-            </p>
 
-            <p class="tel">
-              <img src="img/tel.png" alt="Ícone telefone" class="icone" />
-              (11)98109-4528
-            </p>
-          </div>
-        </div>
+    <div>
+      <p class="contatos">CONTATOS</p>
+      <div>
+        <p class="email"> <img src="img/email.png" alt="Ícone e-mail" class="icone"> <a
+            href="mailto:marcenariazequinha@yahoo.com.br" class="emailribeiro">ribeiroplanejados@gmail.com.br</a> </p>
 
-        <div>
-          <p class="endereco">ENDEREÇO</p>
-          <div>
-            <address class="local">Av. Alcântara Machado, 2293</address>
-            <address class="local">São Paulo, SP, 03101-001</address>
-          </div>
-        </div>
-
-        <div>
-          <p class="pag">FORMAS DE PAGAMENTO</p>
-          <div class="imgpagamento">
-            <img
-              src="img/formapag.png"
-              alt="formas de pagamento"
-              width="250rem"
-            />
-          </div>
-        </div>
+        <p class="tel">
+          <img src="img/tel.png" alt="Ícone telefone" class="icone"> (11)95000-3119
+        </p>
       </div>
-    </footer>
-  </body>
+    </div>
+
+    <div>
+      <p class="endereco">ENDEREÇO</p>
+      <div>
+        <address class="local"> Av. Alcântara Machado, 2293
+        </address>
+        <address class="local">São Paulo, SP, 03101-001 </address>
+      </div>
+    </div>
+
+    <div>
+      <div class="imgpagamento">
+        <img src="img/formapag.png" alt="formas de pagamento" width="250rem">
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
 </html>
